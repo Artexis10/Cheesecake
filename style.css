@@ -1,0 +1,302 @@
+body{
+    background:
+    linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
+    background-color:#e1ebbd;
+    background-size: 128px 128px;
+}
+
+hr, h1{
+    padding: 0;
+    margin: 0;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    min-width: 400px;
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+}
+
+.CrustTableHeader{
+    color: #FF851B;
+    border: solid 1px #FF851B;
+    background-color: black;
+    width: 27.2%
+}
+
+.FillingTableHeader{
+    color: #0074D9;
+    border: solid 1px #0074D9;
+    background-color: black;
+    width: 32.1%
+}
+
+.EquipmentTableHeader{
+    color: white;
+    border: solid 1px white;
+    background-color: black;
+    width: 30.15%
+}
+
+.SauceTableHeader{
+    color: #FF4136;
+    border: solid 1px #FF4136;
+    background-color: black;
+    width: 27.2%
+}
+
+.CrustTable tbody tr:last-of-type{
+    border-bottom: solid 4px #FF851B;
+}
+
+.FillingTable tbody tr:last-of-type{
+    border-bottom: solid 4px #0074D9;
+}
+
+.EquipmentTable tbody tr:last-of-type{
+    border-bottom: solid 4px black;
+}
+
+.SauceTable tbody tr:last-of-type{
+    border-bottom: solid 4px #FF4136;
+}
+
+.CrustTable thead tr {
+    background-color: #FF851B;
+}
+
+.FillingTable thead tr {
+    background-color: #0074D9;
+}
+
+
+.EquipmentTable thead tr {
+    background-color: #111111;
+}
+
+.SauceTable thead tr {
+    background-color: #FF4136;
+}
+
+table thead tr{
+    background-color: #001f3f;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+table th, table td{
+    padding: 12px 15px;
+}
+
+table tbody tr{
+    border-bottom: 1px solid #dddddd;
+}
+
+table tbody tr{
+    background-color: #ffffff;
+}
+
+table tbody tr:nth-last-of-type(even){
+    background-color: #f3f3f3;
+}
+
+table tbody tr:last-of-type{
+    border-bottom: 2px solid #001f3f;
+}
+
+.CrustMethodHeader{
+    color: #FF851B;
+    text-decoration: underline;
+}
+
+.CakeMethodHeader{
+    color: #0074D9;
+    text-decoration: underline;
+}
+
+.CakeFinishingMethodHeader{
+    color: #C71585;
+    text-decoration: underline;
+}
+
+.SauceMethodHeader{
+    color: #FF4136;
+    text-decoration: underline;
+}
+
+.AuthorReferenceHeader{
+    color: #001f3f;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    border: solid 2px;
+    border-radius: 2px 2px 2px 2px;
+    border-color: #001f3f;
+    background-color: #85144b;
+    color: white;
+    padding: 5px;
+    margin-bottom: 7px;
+    text-shadow: 3px 3px black;
+    font-family: 'Comfortaa', cursive;
+    padding-right: 0px;
+    text-align: left;
+    /*text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;*/
+}
+
+hr{
+    border: solid 0.1px;
+    border-color: #001f3f;
+    padding: 1px;
+    background-color: #001f3f;
+    margin-bottom: 5px;
+    width:99.8%;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.cherry{
+    list-style: none;
+    text-align: left;
+    background-color: #85144b;
+    color: white;
+    text-shadow: 1.8px 1.8px black;
+    border-radius: 2px 2px 2px 2px;
+    border: solid 1.7px;
+    padding-left: 33.4px;
+    padding-bottom: 2px;
+    margin-bottom: 5px;
+    border-color: #001f3f;
+}
+
+.cherry:before{
+    content: '🍒';
+    width: 0.8em;
+    margin-left: -3.5em; 
+}
+
+.UpperClassOfCrustMethodPoints{
+    list-style: none;
+    counter-reset: li
+}
+
+.CrustMethodPoints:before{
+    content: counter(li) ".";
+    color: #FF851B;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 1em;
+    margin-left: -1.6em;
+    margin-right: 0.5em;
+    counter-increment: li
+}
+
+.CrustMethodPoints{
+    background-color: #FF851B;
+    padding-left: 3px;
+    margin-bottom: 8px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.UpperClassOfCakeMethodPoints{
+    list-style: none;
+    counter-reset: li
+}
+
+.CakeMethodPoints:before{
+    content: counter(li) ".";
+    color: #0074D9;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 1em;
+    margin-left: -1.6em;
+    margin-right: 0.5em;
+    counter-increment: li
+}
+
+.CakeMethodPoints{
+    background-color: #0074D9;
+    padding-left: 3px;
+    margin-bottom: 8px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.UpperClassOfCakeFinishingMethodPoints{
+    list-style: none;
+    counter-reset: li
+}
+
+.CakeFinishingMethodPoints:before{
+    content: counter(li) ".";
+    color: #85144b;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 1em;
+    margin-left: -1.6em;
+    margin-right: 0.5em;
+    counter-increment: li
+}
+
+.CakeFinishingMethodPoints{
+    background-color: #85144b;
+    padding-left: 3px;
+    margin-bottom: 8px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.UpperClassOfSauceMethodHeaderPoints{
+    list-style: none;
+    counter-reset: li
+}
+
+.SauceMethodPoints:before{
+    content: counter(li) ".";
+    color: #FF4136;
+    font-weight: bold;
+    display: inline-block;
+    text-align: right;
+    width: 1em;
+    margin-left: -1.6em;
+    margin-right: 0.5em;
+    counter-increment: li
+}
+
+.SauceMethodPoints{
+    background-color: #FF4136;
+    padding-left: 3px;
+    margin-bottom: 8px;
+    border-radius: 2px 2px 2px 2px;
+}
+
+.cheesecake{
+    border: solid 1px #001f3f;
+    padding: 1px;
+    background-color: #001f3f;
+    border-radius: 2px 2px 2px 2px;
+}
+
+a{
+    text-decoration: none;
+    color: #85144b;
+}
+
+a:hover{
+    color: #FF4136;
+}
+
+
+
