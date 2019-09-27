@@ -1,19 +1,123 @@
-body{
-    background:
-    linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
-    linear-gradient(45deg, #92baac 45px, transparent 45px,transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
-    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px,#92baac 68px,#92baac 113px,transparent 113px,transparent 158px,#92baac 158px);
-    background-color:#e1ebbd;
-    background-size: 128px 128px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-hr, h1{
-    padding: 0;
-    margin: 0;
+h1{
+    border-bottom: solid 4px;
+    border-color: black;
+    background-color: white;
+    color: black;
+    padding-left: 1px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Comfortaa', cursive;
+    text-align: left;
+    font-size: 385%;
+    background-image: url("img/leaves-pattern.png");
 }
+
+body{
+    background-image: url("img/wheat.png");
+    font-family: 'Open Sans', sans-serif;
+}
+
+.cheesecake{
+    width: 40%;
+    float: left;
+    border: solid 4px black;
+    border-left: 0;
+    border-top: 0;
+}
+
+.list{
+    width: 60%;
+    float: right;
+    border-left: 0;
+    font-size: 18px;
+}
+
+.clearfix{
+    clear:both
+}
+
+.cherry{
+    border-bottom: solid 4px black;
+    border-right: 0;
+    list-style: none;
+    padding-left: 40px;
+    text-align: left;
+    background-color: white;
+    color: black;
+    margin-top: 0;
+    padding-left: 40px;
+    padding-bottom: 188px;
+    background-image: url("img/leaves-pattern.png");
+    text-indent: 31px;
+}
+
+.cherry:last-of-type(end){
+    border-bottom: 0px;
+}
+
+.cherry:before{
+    content: '🍒 ';
+    width: 100%;
+    margin-left: -60px; 
+}
+
+.bar{
+    background-image: url("img/leaves-pattern.png");
+}
+
+/*Setting beside the first two tables.*/
+.CrustTableLeft{
+    width: 50%;
+    float: left;
+    padding-left: 10%;
+}
+
+.FillingTableRight{
+    width: 50%;
+    float: right;
+    padding-left: 10%;
+}
+
+.Table1andTable2Juxtapositioning{
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*Setting beside the last two tables.*/
+.EquipmentTableLeft{
+    width: 50%;
+    float: left;
+    padding-left: 10%;
+}
+
+.SauceTableRight{
+    width: 50%;
+    float: right;
+    padding-left: 10%;
+}
+
+.Table3andTable4Juxtapositioning{
+    overflow: hidden;
+    width: 100%
+}
+
 
 h2{
     text-decoration: underline;
+    text-align: left;
+    padding-bottom: 15px;
+    font-size: 150%;
+}
+
+hr{
+    border: solid 2px black;
 }
 
 table{
@@ -25,34 +129,26 @@ table{
     box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
 }
 
+
+/*Coloring the heading of the table.*/
 .CrustTableHeader{
     color: #FF851B;
-    border: solid 1px #FF851B;
-    background-color: black;
-    width: 27.2%
 }
 
 .FillingTableHeader{
     color: #0074D9;
-    border: solid 1px #0074D9;
-    background-color: black;
-    width: 32.1%
 }
 
 .EquipmentTableHeader{
-    color: white;
-    border: solid 1px white;
-    background-color: black;
-    width: 30.15%
+    color: black;
 }
 
 .SauceTableHeader{
     color: #FF4136;
-    border: solid 1px #FF4136;
-    background-color: black;
-    width: 27.2%
 }
 
+
+/*Coloring the last line of the 4 tables.*/
 .CrustTable tbody tr:last-of-type{
     border-bottom: solid 4px #FF851B;
 }
@@ -69,26 +165,27 @@ table{
     border-bottom: solid 4px #FF4136;
 }
 
-.CrustTable thead tr {
+
+/*Coloring the head of the 4 tables.*/
+.CrustTable thead tr{
     background-color: #FF851B;
 }
 
-.FillingTable thead tr {
+.FillingTable thead tr{
     background-color: #0074D9;
 }
 
-
-.EquipmentTable thead tr {
+.EquipmentTable thead tr{
     background-color: #111111;
 }
 
-.SauceTable thead tr {
+.SauceTable thead tr{
     background-color: #FF4136;
 }
 
+
 table thead tr{
-    background-color: #001f3f;
-    color: #ffffff;
+    color: white;
     text-align: left;
     font-weight: bold;
 }
@@ -98,19 +195,15 @@ table th, table td{
 }
 
 table tbody tr{
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid #f3f3f3;
 }
 
 table tbody tr{
-    background-color: #ffffff;
+    background-color: white;
 }
 
-table tbody tr:nth-last-of-type(even){
+table tbody tr:nth-of-type(even){
     background-color: #f3f3f3;
-}
-
-table tbody tr:last-of-type{
-    border-bottom: 2px solid #001f3f;
 }
 
 .CrustMethodHeader{
@@ -124,7 +217,7 @@ table tbody tr:last-of-type{
 }
 
 .CakeFinishingMethodHeader{
-    color: #C71585;
+    color:#4B0082;
     text-decoration: underline;
 }
 
@@ -134,61 +227,14 @@ table tbody tr:last-of-type{
 }
 
 .AuthorReferenceHeader{
-    color: #001f3f;
-}
-
-body{
-    font-family: 'Open Sans', sans-serif;
-}
-
-h1{
-    border: solid 2px;
-    border-radius: 2px 2px 2px 2px;
-    border-color: #001f3f;
-    background-color: #85144b;
-    color: white;
-    padding: 5px;
-    margin-bottom: 7px;
-    text-shadow: 3px 3px black;
-    font-family: 'Comfortaa', cursive;
-    padding-right: 0px;
     text-align: left;
-    /*text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;*/
+    color: black;
 }
 
-hr{
-    border: solid 0.1px;
-    border-color: #001f3f;
-    padding: 1px;
-    background-color: #001f3f;
-    margin-bottom: 5px;
-    width:99.8%;
-    border-radius: 2px 2px 2px 2px;
-}
-
-.cherry{
-    list-style: none;
-    text-align: left;
-    background-color: #85144b;
-    color: white;
-    text-shadow: 1.8px 1.8px black;
-    border-radius: 2px 2px 2px 2px;
-    border: solid 1.7px;
-    padding-left: 33.4px;
-    padding-bottom: 2px;
-    margin-bottom: 5px;
-    border-color: #001f3f;
-}
-
-.cherry:before{
-    content: '🍒';
-    width: 0.8em;
-    margin-left: -3.5em; 
-}
-
+/*Coloring the increment.*/
 .UpperClassOfCrustMethodPoints{
     list-style: none;
-    counter-reset: li
+    counter-reset: li;
 }
 
 .CrustMethodPoints:before{
@@ -198,18 +244,19 @@ hr{
     display: inline-block;
     text-align: right;
     width: 1em;
-    margin-left: -1.6em;
+    margin-left: -1.5em;
     margin-right: 0.5em;
-    counter-increment: li
+    counter-increment: li;
 }
 
 .CrustMethodPoints{
-    background-color: #FF851B;
-    padding-left: 3px;
+    padding-left: 40px;
     margin-bottom: 8px;
     border-radius: 2px 2px 2px 2px;
 }
 
+
+/*Coloring the increment.*/
 .UpperClassOfCakeMethodPoints{
     list-style: none;
     counter-reset: li
@@ -222,18 +269,19 @@ hr{
     display: inline-block;
     text-align: right;
     width: 1em;
-    margin-left: -1.6em;
+    margin-left: -1.5em;
     margin-right: 0.5em;
     counter-increment: li
 }
 
 .CakeMethodPoints{
-    background-color: #0074D9;
-    padding-left: 3px;
+    padding-left: 40px;
     margin-bottom: 8px;
     border-radius: 2px 2px 2px 2px;
 }
 
+
+/*Coloring the increment.*/
 .UpperClassOfCakeFinishingMethodPoints{
     list-style: none;
     counter-reset: li
@@ -241,22 +289,22 @@ hr{
 
 .CakeFinishingMethodPoints:before{
     content: counter(li) ".";
-    color: #85144b;
+    color: #4B0082;
     font-weight: bold;
     display: inline-block;
     text-align: right;
     width: 1em;
-    margin-left: -1.6em;
+    margin-left: -1.5em;
     margin-right: 0.5em;
     counter-increment: li
 }
 
 .CakeFinishingMethodPoints{
-    background-color: #85144b;
-    padding-left: 3px;
+    padding-left: 40px;
     margin-bottom: 8px;
     border-radius: 2px 2px 2px 2px;
 }
+
 
 .UpperClassOfSauceMethodHeaderPoints{
     list-style: none;
@@ -270,33 +318,39 @@ hr{
     display: inline-block;
     text-align: right;
     width: 1em;
-    margin-left: -1.6em;
+    margin-left: -1.5em;
     margin-right: 0.5em;
     counter-increment: li
 }
 
 .SauceMethodPoints{
-    background-color: #FF4136;
-    padding-left: 3px;
+    padding-left: 40px;
     margin-bottom: 8px;
     border-radius: 2px 2px 2px 2px;
 }
 
-.cheesecake{
-    border: solid 1px #001f3f;
-    padding: 1px;
-    background-color: #001f3f;
-    border-radius: 2px 2px 2px 2px;
-}
 
 a{
     text-decoration: none;
-    color: #85144b;
+    color: #0074D9;
 }
 
 a:hover{
     color: #FF4136;
 }
 
+.Opener{
+    margin-bottom: 20%;
+}
 
+.AuthorReferenceList{
+    margin-left: 10px;
+    padding-bottom: 25px;
+    font-size: 110%
+}
+
+.Filler{
+    padding-bottom: 78px;
+    background-image: url("img/leaves-pattern.png");
+}
 
